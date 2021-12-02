@@ -1,0 +1,150 @@
+dl.stappen {
+  display: block;
+  margin: 50px 0 0;
+}
+
+dl.stappen .item {
+  padding-left: 52px;
+  position: relative;
+}
+
+dl.stappen .item:before {
+  width: 3px;
+  bottom: -2.5rem;
+  position: absolute;
+  content: "";
+  left: 8px;
+  top: 0.25rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #818181), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#818181 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 1px 20px;
+  background-repeat: repeat-y;
+}
+
+dl.stappen .item:last-of-type:before {
+  display: none;
+}
+
+dl.stappen .item dt {
+  font-weight: 500;
+  font-size: 21px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+dl.stappen .item dt:first-of-type {
+  margin-top: 0;
+}
+
+dl.stappen .item dt .round {
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #eee;
+  background: #818181;
+  border-radius: 50%;
+  z-index: 100;
+  -webkit-transition: width 500ms, height 500ms;
+  transition: width 500ms, height 500ms;
+}
+
+dl.stappen .item dd {
+  font-size: 17px;
+  line-height: 26px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+dl.stappen .item dd p {
+  margin-bottom: 15px;
+}
+
+dl.stappen .item dd p:last-child {
+  margin-bottom: 0;
+}
+
+dd {
+  max-width: 500px;
+}
+
+.item-heading {
+  font-size: 12px;
+  font-family: Neue Haas Grotesk Text Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #818181;
+}
+
+dl.stappen .item.active .item-heading {
+  font-family: Neue Haas Grotesk Text Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  /* identical to box height, or 100% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #dc1871;
+}
+
+dl.stappen .item.active dt .round {
+  width: 21px;
+  height: 21px;
+  left: -52px;
+  background: #dc1871 content-box;
+  border: 1px dashed #dc1871;
+  padding: 3px;
+  display: inline-block;
+}
+
+#timeline {
+  background-image: url("./assets/q-1.png");
+  color: #fff;
+  height: 800px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timeline .tl-wrapper {
+  position: fixed;
+}
+
+#timeline .slides {
+  width: 100%;
+  height: 100vh;
+}
+
+#timeline .slides img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
