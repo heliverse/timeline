@@ -115,13 +115,12 @@ dl.stappen .item.active dt .round {
 }
 
 #timeline {
-  background-image: url("./assets/q-1.png");
   color: #fff;
   height: 800px;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-size: contain;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -132,10 +131,13 @@ dl.stappen .item.active dt .round {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 0;
 }
 
 #timeline .tl-wrapper {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 #timeline .slides {
@@ -146,5 +148,9 @@ dl.stappen .item.active dt .round {
 #timeline .slides img {
   width: 100%;
   height: 100%;
+}
+
+#fullpage {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

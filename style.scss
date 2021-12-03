@@ -1,35 +1,3 @@
-// #timeline {
-// 	.tl-wrapper {
-// 		background-color: red;
-// 		.timeline {
-// 			display: flex;
-// 			width: 100%;
-// 			height: 357px;
-// 			.lines {
-// 				width: 20px;
-// 				margin-left: 40px;
-// 				margin-top: 6px;
-// 				.dot {
-// 					width: 14px;
-// 					height: 14px;
-// 					background: #d1d6e6;
-// 					border-radius: 7px;
-// 				}
-// 				.line {
-// 					height: 10px;
-// 					width: 2px;
-// 					background: #d1d6e6;
-// 					margin-left: 5.3px;
-//           margin-bottom: 5px;
-// 				}
-// 			}
-// 			.body {
-// 				max-width: 500px;
-//         margin-top: 10px;
-// 			}
-// 		}
-// 	}
-// }
 dl.stappen {
 	display: block;
 	margin: 50px 0 0;
@@ -144,16 +112,17 @@ dl.stappen {
 	}
 }
 #timeline {
-	background-image: url("./assets/q-1.png");
 	color: #fff;
 	height: 800px;
-	background-size: contain;
 	display: flex;
+	background-size: contain;
   justify-content: center;
   flex-direction: column;
 	align-items: center;
+	position: absolute;
+	top: 0;
   .tl-wrapper{
-    position: fixed;
+    position: sticky;
   }
   .slides{
     width: 100%;
@@ -163,4 +132,8 @@ dl.stappen {
       height: 100%;
     }
   }
+}
+
+#fullpage{
+	position: absolute;
 }
