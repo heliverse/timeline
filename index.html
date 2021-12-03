@@ -175,16 +175,16 @@
 		<script type="text/javascript">
 			var myFullpage = new fullpage("#fullpage", {
 				anchors: ["discovery", "uiux", "informationArchitecture", "lowfidelity", "uiscreens"],
-				sectionsColor: ["#C63D0F", "#1BBC9B", "#7E8F7C"],
 				navigation: true,
 				navigationPosition: "right",
-				navigationTooltips: ["First page", "Second page", "Third and last page"],
+				navigationTooltips: [
+					"Discovery",
+					"UX and Market Research",
+					"InFormation Architecture",
+					"LOW-FIDelity Screens",
+					"UI Screens + Mockups",
+				],
 			});
-			myFullpage.moveSectionDown();
-			myFullpage.moveSectionDown();
-
-			console.log(myFullpage.getActiveSlide());
-			console.log(myFullpage.getActiveSection());
 		</script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -244,7 +244,7 @@
 						console.log(this);
 						var activeItem = $(this).closest(itemSelector);
 						if (activeItem.hasClass(options.activeClass)) return;
-						console.log({activeItem});
+						console.log({ activeItem });
 						updateView(activeItem);
 					});
 				});
@@ -254,16 +254,15 @@
 			$(window).on("hashchange", function (e) {
 				console.log(window.location.hash);
 				var activeItem = $(`${window.location.hash}-accordion`);
-						if (activeItem.hasClass('active')) return;
-						var otherItems = activeItem.siblings();
-					otherItems.removeClass('active').children("dd").slideUp();
+				if (activeItem.hasClass("active")) return;
+				var otherItems = activeItem.siblings();
+				otherItems.removeClass("active").children("dd").slideUp();
 
-					activeItem.addClass('active').children("dd").slideDown();
+				activeItem.addClass("active").children("dd").slideDown();
 
-						// updateView(activeItem);
+				// updateView(activeItem);
 				// myFullpage.moveTo(`${window.location.hash}`);
 			});
-
 		</script>
 	</body>
 </html>
