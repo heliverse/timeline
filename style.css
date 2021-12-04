@@ -139,6 +139,14 @@ dl.stappen .item.active dt .round {
   width: 100%;
   max-height: 100vh;
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#timeline .backgrounds::-webkit-scrollbar {
+  display: none;
 }
 
 #timeline .backgrounds .slide {
