@@ -135,6 +135,12 @@ dl.stappen .item.active dt .round {
   position: relative;
 }
 
+@media only screen and (max-width: 690px) {
+  #timeline {
+    display: none;
+  }
+}
+
 #timeline .backgrounds {
   width: 100%;
   max-height: 100vh;
@@ -177,6 +183,7 @@ dl.stappen .item.active dt .round {
 
 #timeline .tl-wrapper {
   position: absolute;
+  left: 80px;
 }
 
 #timeline .slides {
